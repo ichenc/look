@@ -1,0 +1,1289 @@
+/*==============引用字体================*/
+@font-face {
+  font-family: "mayiuifont"; /* Project id 3323827 */
+  src: url('font/mayiui.woff2?t=1649809486785') format('woff2'),
+       url('font/mayiui.woff?t=1649809486785') format('woff'),
+       url('font/mayiui.ttf?t=1649809486785') format('truetype');
+}
+
+.mayiuifont {
+  font-family: "mayiuifont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mayiui-icon-check:before {
+  content: "\e604";
+}
+
+.mayiui-icon-close:before {
+  content: "\e605";
+}
+
+.mayiui-icon-minimize:before {
+  content: "\e60d";
+}
+
+.mayiui-icon-maximize:before {
+  content: "\e60c";
+}
+
+.mayiui-icon-exclamation:before {
+  content: "\e607";
+}
+
+.mayiui-icon-frown:before {
+  content: "\e608";
+}
+
+.mayiui-icon-reduction:before {
+  content: "\e609";
+}
+
+.mayiui-icon-question:before {
+  content: "\e60a";
+}
+
+.mayiui-icon-smile:before {
+  content: "\e60b";
+}
+
+/*==============按钮部分================*/
+.mayiui-btn{
+    font-family: inherit;
+    text-transform: none;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+.mayiui-btn-blue {
+    border-color: #007bff;
+    background-color: #007bff;
+    color: #fff;
+}
+.mayiui-btn-blue:hover {
+    border-color: #007bff;
+    background-color: #0069d9;
+    color: #fff
+}
+
+.mayiui-btn-darkgrey {
+    border-color: #5a6268;
+    background-color: #5a6268;
+    color: #fff
+}
+.mayiui-btn-darkgrey:hover {
+    border-color: #343a3e;
+    background-color: #343a3e;
+    color: #fff
+}
+
+.mayiui-btn-green {
+    border-color: #28a745;
+    background-color: #28a745;
+    color: #fff
+}
+.mayiui-btn-green:hover {
+    border-color: #038a22;
+    background-color: #038a22;
+    color: #fff
+}
+
+.mayiui-btn-red {
+    border-color: #d63e4d;
+    background-color: #d63e4d;
+    color: #fff
+}
+.mayiui-btn-red:hover {
+    border-color: #c30e20;
+    background-color: #c30e20;
+    color: #fff
+}
+
+.mayiui-btn-cyan {
+    border-color: #17a2b8;
+    background-color: #17a2b8;
+    color: #fff
+}
+.mayiui-btn-cyan:hover {
+    border-color: #117a8b;
+    background-color: #117a8b;
+    color: #fff
+}
+
+.mayiui-btn-orange {
+    border-color: #fd7602;
+    background-color: #fd7602;
+    color: #fff
+}
+.mayiui-btn-orange:hover {
+    border-color: #de6904;
+    background-color: #de6904;
+    color: #fff
+}
+
+.mayiui-btn-purple {
+    border-color: #8a6de9;
+    background-color: #8a6de9;
+    color: #fff
+}
+.mayiui-btn-purple:hover {
+    border-color: #6d4dd6;
+    background-color: #6d4dd6;
+    color: #fff
+}
+
+.mayiui-btn-light {
+    border-color: #d2d2d2;
+    background-color: #d2d2d2;
+    color: #343a40
+}
+.mayiui-btn-light:hover {
+    border-color: #d2d2d2;
+    background-color: #bfbfbf;
+    color: #343a40
+}
+
+.mayiui-btn-black {
+    border-color: #212529;
+    background-color: #212529;
+    color: #FFF
+}
+.mayiui-btn-black:hover {
+    border-color: #000;
+    background-color: #000;
+    color: #FFF
+}
+
+.mayiui-btn-white {
+    border-color: #fff;
+    background-color: #fff;
+    color: #343a40
+}
+.mayiui-btn-white:hover {
+    border-color: #fff;
+    background-color: #e9ecef;
+    color: #343a40
+}
+
+.mayiui-btn-link {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+.mayiui-btn-link:hover {
+    color: #045ada
+}
+/*------定义关闭按钮，最小化按钮，最大化按钮，还原按钮--------*/
+.mayiui-btn-font {
+    box-sizing: content-box;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: .25rem .25rem;
+    color: #000;
+    border: 0;
+    font-family: inherit;
+    text-transform: none;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+.mayiui-btn-font:focus{
+    outline: 0;
+}
+.mayiui-btn-font:active{
+    color: #D63384;
+}
+.mayiui-btn-color-white{
+    color: #FFF;
+}
+.mayiui-btn-font:hover{
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-name: mayiui-btn-font-hover;
+    animation-name: mayiui-btn-font-hover;
+}
+/*------定义掏空按钮--------*/
+.mayiui-btn-outlined {
+    background-color: transparent;
+    color: #343a40;
+}
+/*------定义按钮圆角--------*/
+.mayiui-btn-fillet{
+    border-radius: 1.5rem;
+    padding: .375rem 1.5rem;
+}
+.mayiui-btn-fillet:focus{
+    outline: 0;
+}
+/*------定义大型按钮--------*/
+.mayiui-btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+}
+.mayiui-btn-lg.mayiui-btn-fillet {
+    padding: .5rem 2rem;
+    font-size: 1.25rem;
+    border-radius: 2.5rem;
+}
+/*------定义小型按钮--------*/
+.mayiui-btn-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    border-radius: .2rem;
+} 
+.mayiui-btn-sm.mayiui-btn-fillet {
+    padding: .25rem 1rem;
+    font-size: .875rem;
+    border-radius: 2.5rem;
+}
+/*------放置图标--------*/
+.mayiui-btn i{
+    margin: 0;
+    font-size: 1rem;
+}
+/*------遮罩层--------*/
+.mayiui-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .2)
+}
+/*------共用背景样式--------*/
+.mayiui-bg-blue {
+    background: #007bff;
+    color: #fff;
+}
+
+.mayiui-bg-darkgrey {
+    background: #5a6268;
+    color: #fff;
+}
+
+.mayiui-bg-green {
+    background: #28a745;
+    color: #fff;
+}
+
+.mayiui-bg-red {
+    background: #ff0000;
+    color: #fff;
+}
+
+.mayiui-bg-cyan {
+    background: #17a2b8;
+    color: #fff;
+}
+
+.mayiui-bg-orange {
+    background: #fd7602;
+    color: #fff
+}
+
+.mayiui-bg-purple {
+    background: #8a6de9;
+    color: #fff
+}
+
+.mayiui-bg-light {
+    background: #d2d2d2;
+    color: #343a40;
+}
+
+.mayiui-bg-white {
+    background: #ffffff;
+    color: #343a40;
+}
+
+.mayiui-bg-black  {
+    background: #212529;
+    color: #fff;
+}
+/*----------------------------弹出询问框相关----------------------------------*/
+.mayiui-alert {
+    position: fixed;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    min-width: 380px;
+    border-radius: .25rem;
+    overflow: hidden;
+}
+
+.mayiui-alert .mayiui-alert-top {
+    box-sizing:border-box;
+    float: left;
+    width: 100%;
+    padding:.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    background-color: rgba(0, 0, 0, .03);
+}
+
+.mayiui-alert .mayiui-alert-top .mayiui-alert-title {
+    float: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-left: .5rem;
+    font-weight: 700;
+}
+
+.mayiui-alert .mayiui-alert-top .mayiui-alert-close {
+    float: right;
+}
+
+.mayiui-alert .mayiui-alert-ico {
+    box-sizing:border-box;
+    float: left;
+    width: 100%;
+    padding: 2.2rem 0 .5rem 0;
+    min-height: 2rem;
+}
+
+.mayiui-alert .mayiui-alert-ico .mayiui-ico-circular{
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.mayiui-alert .mayiui-alert-ico i{
+    font-size: 2rem;
+}
+
+.mayiui-alert .mayiui-alert-content {
+    box-sizing:border-box;
+    float: left;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+.mayiui-alert .mayiui-alert-content.mayiui-alert-onerow {
+   line-height: 8rem;
+}
+
+.mayiui-alert .mayiui-alert-content.mayiui-alert-morerow {
+   line-height: 1.5rem;
+   padding: 3rem 1.5rem;
+}
+
+.mayiui-alert .mayiui-alert-content.mayiui-alert-onerow-ico {
+   line-height: 2rem;
+   padding-bottom: 2rem;
+}
+
+.mayiui-alert .mayiui-alert-content.mayiui-alert-morerow-ico {
+   line-height: 2rem;
+   padding: 0 1.5rem 2.5rem 1.5rem;
+}
+
+.mayiui-alert .mayiui-alert-input-content {
+    box-sizing: border-box;
+    padding: 2rem 2rem;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.mayiui-alert .mayiui-alert-input-content input {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+}
+.mayiui-alert .mayiui-alert-button {
+    display: flex;
+    box-sizing:border-box;
+    flex-direction: row-reverse;
+    padding: .25rem .5rem;
+    float: right;
+}
+
+.mayiui-alert .mayiui-alert-button .mayiui-alert-button-li{
+    margin-left: .5rem;
+}
+
+.mayiui-alert.mayiui-bg-white {
+    border: 1px solid #c0c0c0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .05);
+}
+/*----------------------------Alert-精致----------------------------------*/
+.mayiui-alert.mayiui-alert-delicate{
+    max-width: 100%;
+    min-width: 280px;
+    border-radius: .8rem;
+}
+.mayiui-alert.mayiui-alert-delicate .mayiui-alert-button {
+    flex-direction: row;
+    padding: 0;
+    text-align: center;
+}
+.mayiui-alert.mayiui-alert-delicate .mayiui-alert-button .mayiui-alert-button-li {
+    width: 100%;
+    margin: 0;
+}
+.mayiui-alert.mayiui-alert-delicate .mayiui-alert-button .mayiui-alert-button-li button {
+    width: 100%;
+    border-radius: 0;
+}
+/*----------------------------Alert-手机----------------------------------*/
+.mayiui-alert.mayiui-alert-banner{
+    width: 100%;
+    border-radius: 0;
+}
+.mayiui-alert.mayiui-alert-banner .mayiui-alert-button {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.mayiui-alert.mayiui-alert-banner .mayiui-alert-button .mayiui-alert-button-li {
+    box-sizing:border-box;
+    margin: 0 .5rem .5rem .5rem;
+}
+.mayiui-alert.mayiui-alert-banner .mayiui-alert-button .mayiui-alert-button-li button {
+    width: 100%;
+}
+
+.mayiui-alert.mayiui-alert-banner.mayiui-bg-white {
+    border: 0px;
+    box-shadow:none;
+}
+/*----------------------------框架----------------------------------*/
+
+.mayiui-element {
+    position: fixed;
+    overflow: hidden;
+}
+
+.mayiui-element .mayiui-element-box {
+    width: 100%;
+    height: 100%
+}
+
+.mayiui-element .mayiui-element-box .mayiui-element-top {
+    box-sizing:border-box;
+    float: left;
+    width: 100%;
+    padding:.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    background-color: rgba(0, 0, 0, .03);
+}
+
+.mayiui-element .mayiui-element-box .mayiui-element-top .mayiui-element-title {
+    float: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-left: .5rem;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.mayiui-element .mayiui-element-box .mayiui-element-top .mayiui-element-close,
+.mayiui-element .mayiui-element-box .mayiui-element-top .mayiui-element-maximizebutton,
+.mayiui-element .mayiui-element-box .mayiui-element-top .mayiui-element-reductionbutton,
+.mayiui-element .mayiui-element-box .mayiui-element-top .mayiui-element-minimizebutton{
+    float: right;
+}
+.mayiui-element .mayiui-element-box .mayiui-element-top .mayiui-element-reductionbutton{
+    display: none;
+}
+.mayiui-element.mayiui-bg-white {
+    border: 1px solid #c0c0c0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .125);
+}
+
+.mayiui-element-minimize {
+    overflow: hidden;
+    width: 200px;
+}
+.mayiui-element-minimize .mayiui-element-box .mayiui-element-top {
+    padding: 0
+}
+.mayiui-element-minimize .mayiui-element-box .mayiui-element-top .mayiui-element-title {
+    width: 120px
+}
+.mayiui-element .mayiui-element-box .mayiui-element-content {
+    overflow: hidden;
+    width: 100%;
+}
+
+.mayiui-element .mayiui-element-box .mayiui-element-content .mayiui-element-iframe {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: 0
+}
+
+/*----------------------------显示捕获层时显示的外挂关闭按钮----------------------------------*/
+
+.mayiui-temp-close{
+    position:absolute;
+    top:.5rem;
+    right: .5rem;
+    overflow: hidden;
+}
+/*----------------------------消息相关----------------------------------*/
+.mayiui-msg {
+    position: fixed;
+    overflow: hidden;
+    padding: .6rem 1.5rem;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    min-width: 1px;
+    border-radius: .25rem;
+}
+
+.mayiui-msg .mayiui-msg-ico {
+    width: 100%;
+    text-align: center;
+    padding-top: .3rem;
+}
+
+.mayiui-msg .mayiui-msg-ico .mayiui-ico-circular{
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.mayiui-msg .mayiui-msg-ico i{
+    font-size: 1.2rem;
+}
+
+.mayiui-msg .mayiui-msg-content{
+    line-height: 2rem;
+    text-align: center;
+    padding: 0 .25rem;
+    float: left;
+}
+
+.mayiui-msg .mayiui-msg-close {
+    float: right;
+    top: 0px;
+    right: 0px;
+}
+
+.mayiui-msg.mayiui-msg-100 .mayiui-msg-content{
+    text-align: center;
+    float:none;
+    width: 100%;
+}
+
+.mayiui-msg.mayiui-msg-100 .mayiui-msg-close {
+    position: absolute;
+    padding: .5rem;
+}
+
+.mayiui-msg.mayiui-bg-blue {
+    background: #007bffe0;
+    color: #fff;
+}
+
+.mayiui-msg.mayiui-bg-darkgrey {
+    background: #5a6268e0;
+    color: #fff;
+}
+
+.mayiui-msg.mayiui-bg-green {
+    background: #28a745e0;
+    color: #fff;
+}
+
+.mayiui-msg.mayiui-bg-red {
+    background: #d63e4de0;
+    color: #fff;
+}
+
+.mayiui-msg.mayiui-bg-cyan {
+    background: #17a2b8e0;
+    color: #fff;
+}
+
+.mayiui-msg.mayiui-bg-orange {
+    background: #fd7602e0;
+    color: #fff
+}
+
+.mayiui-msg.mayiui-bg-purple {
+    background: #8a6de9e0;
+    color: #fff
+}
+
+.mayiui-msg.mayiui-bg-light {
+    background: #d2d2d2e0;
+    color: #343a40;
+}
+
+.mayiui-msg.mayiui-bg-black  {
+    background: #212529e0;
+    color: #fff;
+}
+
+.mayiui-msg.mayiui-bg-white {
+    background: #ffffffe0;
+    color: #343a40;
+}
+/*==============tip====================*/
+.mayiui-tip {
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: auto;
+    height: auto
+}
+
+.mayiui-tip .mayiui-tip-triangle {
+    float: left;
+    width: 0;
+    height: 0
+}
+
+.mayiui-tip .mayiui-tip-content {
+    float: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: .6rem;
+    width: auto;
+    border-radius: .25rem;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1.5rem
+}
+/*==============mark====================*/
+.mayiui-mark {
+    box-sizing:border-box;
+    width: 1.6rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    border-radius: 50%;
+    text-align: center;
+    font-size: .8rem;
+    position: fixed;
+    overflow: hidden
+}
+/*==============loading====================*/
+.mayiui-loading {
+    position: fixed;
+    top: 50%;
+    left:50%;
+    overflow: hidden;
+    width: auto;
+}
+.mayiui-loading-mode-1{
+    border-radius: .8rem;
+    padding: 1rem;
+    
+}
+.mayiui-loading .mayiui-loading-icon{
+    float: left;
+}
+.mayiui-loading .mayiui-loading-content{
+    font-size: 1.2rem;
+    margin: .5rem 0 0;
+    color: #FFF;
+    float: left;
+    width: auto;
+}
+.mayiui-loading .mayiui-loading-ico-0{
+    width: 7.2rem;
+    height: 2rem;
+}
+
+.mayiui-loading .mayiui-loading-ico-0 .mayiui-loading-ico{
+    width: 2rem;
+    height: 2rem;
+    float: left;
+    margin: 0 .2rem;
+    border-radius: 50%;
+    background: #FFF;
+}
+
+.mayiui-loading .mayiui-loading-ico-1{
+    width: 5.2rem;
+    height: 5.2rem;
+}
+
+.mayiui-loading .mayiui-loading-ico-1 .mayiui-loading-ico{
+    width: 2rem;
+    height: 2rem;
+    float: left;
+    margin: .3rem;
+    background: #FFF;
+}
+
+.mayiui-loading .mayiui-loading-ico-2{
+    width: 4rem;
+    height: 4rem;
+}
+
+.mayiui-loading .mayiui-loading-ico-2 .mayiui-loading-ico{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    border: .4rem solid #fff;
+    background: transparent !important;
+    display: inline-block;
+    border-color: #ffffff #ffffff transparent;
+}
+
+.mayiui-loading .mayiui-loading-ico-3{
+    display: flex;
+    flex-direction: row;
+    width: 5rem;
+    height: 3rem;
+}
+
+.mayiui-loading .mayiui-loading-ico-3 .mayiui-loading-ico{
+    width: .35rem;
+    height: 2rem;
+    border-radius: .2rem;
+    margin: 0 .25rem;
+    background: #FFF;
+}
+
+/*==============缓动====================*/
+.mayiui-animate {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s
+}
+
+/*---------------Y轴向上----------------------*/
+.mayiui-animate-yin {
+    -webkit-animation-name: mayiui-yIn;
+    animation-name: mayiui-yIn
+}
+
+@-webkit-keyframes mayiui-yIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(45px);
+        transform: translateY(45px);
+        -ms-transform: translateY(45px)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -ms-transform: translateY(0)
+    }
+}
+
+@keyframes mayiui-yIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(45px);
+        transform: translateY(45px);
+        -ms-transform: translateY(45px)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -ms-transform: translateY(0)
+    }
+}
+.mayiui-animate-yout {
+    -webkit-animation-name: mayiui-yOut;
+    animation-name: mayiui-yOut
+}
+
+@-webkit-keyframes mayiui-yOut {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -ms-transform: translateY(0)
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(-45px);
+        transform: translateY(-45px);
+        -ms-transform: translateY(-45px)
+    }
+}
+
+@keyframes mayiui-yOut {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -ms-transform: translateY(0)
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(-45px);
+        transform: translateY(-45px);
+        -ms-transform: translateY(-45px)
+    }
+}
+/*---------------变大----------------------*/
+.mayiui-animate-bouncein {
+    -webkit-animation-name: mayiui-bounceIn;
+    animation-name: mayiui-bounceIn
+}
+
+@-webkit-keyframes mayiui-bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes mayiui-bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        -ms-transform: scale(.5)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -ms-transform: scale(1)
+    }
+}
+.mayiui-animate-bounceout {
+    -webkit-animation-name: mayiui-bounceOut;
+    animation-name: mayiui-bounceOut
+}
+
+@-webkit-keyframes mayiui-bounceOut {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: scale(.8);
+        transform: scale(.8)
+    }
+}
+
+@keyframes mayiui-bounceOut {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -ms-transform: scale(1)
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: scale(.8);
+        transform: scale(.8);
+        -ms-transform: scale(.8)
+    }
+}
+
+.mayiui-animate-somersaultin {
+    -webkit-animation-name: mayiui-somersaultIn;
+    animation-name: mayiui-somersaultIn
+}
+
+@-webkit-keyframes mayiui-somersaultIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotateX(-180deg) rotateY(0);
+        transform: rotateX(-180deg) rotateY(0)
+    }
+    97%,
+    to {
+        opacity: 1;
+        -webkit-transform: rotateX(0) rotateY(0);
+        transform: rotateX(0) rotateY(0)
+    }
+}
+
+@keyframes mayiui-somersaultIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotateX(-180deg) rotateY(0);
+        transform: rotateX(-180deg) rotateY(0)
+    }
+    97%,
+    to {
+        opacity: 1;
+        -webkit-transform: rotateX(0) rotateY(0);
+        transform: rotateX(0) rotateY(0)
+    }
+}
+
+.mayiui-animate-somersaultout {
+    -webkit-animation-name: mayiui-somersaultOut;
+    animation-name: mayiui-somersaultOut
+}
+
+@-webkit-keyframes mayiui-somersaultOut {
+    0% {
+        opacity: 1;
+        -webkit-transform: rotateX(0) rotateY(0);
+        transform: rotateX(0) rotateY(0)
+    }
+    97%,
+    to {
+        opacity: 0;
+        -webkit-transform: rotateX(-180deg) rotateY(0);
+        transform: rotateX(-180deg) rotateY(0)
+    }
+}
+
+@keyframes mayiui-somersaultOut {
+    0% {
+        opacity: 1;
+        -webkit-transform: rotateX(0) rotateY(0);
+        transform: rotateX(0) rotateY(0);
+        -ms-transform: rotateX(0) rotateY(0)
+    }
+    97%,
+    to {
+        opacity: 0;
+        -webkit-transform: rotateX(-180deg) rotateY(0);
+        transform: rotateX(-180deg) rotateY(0);
+        -ms-transform: rotateX(-180deg) rotateY(0)
+    }
+}
+
+.mayiui-animate-badgein {
+    animation: mayiui-badgeIn;
+    -webkit-animation: mayiui-badgeIn
+}
+
+@-webkit-keyframes mayiui-badgeIn {
+    0%,
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -ms-transform: translateX(0)
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+        -ms-transform: translateX(-10px)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+        -ms-transform: translateX(10px)
+    }
+}
+
+@keyframes mayiui-badgeIn {
+    0%,
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -ms-transform: translateX(0)
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+        -ms-transform: translateX(-10px)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+        -ms-transform: translateX(10px)
+    }
+}
+
+.mayiui-animate-badgeout {
+    animation: mayiui-badgeOut;
+    -webkit-animation: mayiui-badgeOut
+}
+
+@-webkit-keyframes mayiui-badgeOut {
+    0%,
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -ms-transform: translateX(0)
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+        -ms-transform: translateX(-10px)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+        -ms-transform: translateX(10px)
+    }
+}
+
+@keyframes mayiui-badgeOut {
+    0%,
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -ms-transform: translateX(0)
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+        -ms-transform: translateX(-10px)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+        -ms-transform: translateX(10px)
+    }
+}
+/*------------------------------------------------变大小，loading0效果---------------------*/
+.mayiui-animate-sizein {
+    animation: mayiui-sizeIn 1s linear infinite;
+    -webkit-animation: mayiui-sizeIn 1s linear infinite
+}
+
+@-webkit-keyframes mayiui-sizeIn {
+    0%,
+    to {
+        -webkit-transform: scale(.3);
+        transform: scale(.3)
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes mayiui-sizeIn {
+    0%,
+    to {
+        -webkit-transform: scale(.3);
+        transform: scale(.3)
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+/*------------------------------------------------变大小同时旋转，loading1效果---------------------*/
+.mayiui-animate-sizerotatein {
+    animation: mayiui-sizerotateIn 2s linear infinite;
+    -webkit-animation: mayiui-sizerotateIn 2s linear infinite
+}
+
+@-webkit-keyframes mayiui-sizerotateIn {
+    0% {
+        -webkit-transform: scale(.3) rotate(0deg);
+        transform: scale(.3) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: scale(1) rotate(180deg);
+        transform: scale(1) rotate(180deg);
+    }
+    100% {
+        -webkit-transform: scale(.3) rotate(360deg);
+        transform: scale(.3) rotate(360deg);
+    }
+}
+
+@keyframes mayiui-sizerotateIn {
+    0% {
+        -webkit-transform: scale(.3) rotate(0deg);
+        transform: scale(.3) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: scale(1) rotate(180deg);
+        transform: scale(1) rotate(180deg);
+    }
+    100% {
+        -webkit-transform: scale(.3) rotate(360deg);
+        transform: scale(.3) rotate(360deg);
+    }
+}
+
+/*------------------------------------------------旋转，loading1效果---------------------*/
+.mayiui-animate-rotatein {
+    animation: mayiui-rotateIn 1s linear infinite;
+    -webkit-animation: mayiui-rotateIn 1s linear infinite
+}
+
+@-webkit-keyframes mayiui-rotateIn {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes mayiui-rotateIn {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/*------------------------------------------------Y轴变化，loading1效果---------------------*/
+.mayiui-animate-scaley {
+    animation: mayiui-scaleyIn 1s linear infinite;
+    -webkit-animation: mayiui-scaleyIn 1s linear infinite
+}
+
+@-webkit-keyframes mayiui-scaleyIn {
+    0% {
+        -webkit-transform: scaley(1);
+        transform: scaley(1);
+    }
+    
+    50% {
+        -webkit-transform: scaley(0.4);
+        transform: scaley(0.4);
+    }
+    
+    100% {
+        -webkit-transform: scaley(1);
+        transform: scaley(1);
+    }
+}
+
+@keyframes mayiui-scaleyIn {
+    0% {
+        -webkit-transform: scaley(1);
+        transform: scaley(1);
+    }
+    
+    50% {
+        -webkit-transform: scaley(0.4);
+        transform: scaley(0.4);
+    }
+    
+    100% {
+        -webkit-transform: scaley(1);
+        transform: scaley(1);
+    }
+}
+/*------------------------------------------------鼠标经过时放大---------------------------*/
+@-webkit-keyframes mayiui-btn-font-hover {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes mayiui-btn-font-hover {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}

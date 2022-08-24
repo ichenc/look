@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN" element::-webkit-scrollbar {display:none}>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+		<meta charset="utf-8">
+		<title>纸飞机 - 最简洁的影视导航 </title>
+		<meta name="keywords" content="腾讯,爱奇艺,优酷,芒果,乐视等地址">
+		<meta name="description" content="本站为广大网友提供优腾讯,爱奇艺,优酷,芒果,乐视等地址">
+		<link rel="icon" href="./img/logo.ico" type="image/x-icon">	
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="full-screen" content="yes">
+		<meta name="browsermode" content="application">
+		<meta name="x5-fullscreen" content="true">
+		<meta name="x5-page-mode" content="app">
+		<meta name="lsvn" content="aHRtbA==">
+		<meta name="author" content="LyLme">
+		<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-2-M/jquery/3.5.1/jquery.min.js" type="application/javascript"></script>
+		<link href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.5.3/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="./css/fontawesome-free5.13.0.css" type="text/css">	
+		<link rel="stylesheet" href="./css/style.css" type="text/css">
+		<link rel="stylesheet" href="./css/font.css" type="text/css">
+		<script type="text/javascript" src="js/mayiui.js"></script>
+		<link rel="stylesheet" href="css/mayiui.css">
+	</head>
+    <body onload="FocusOnInput()"><div class="banner-video"><img src="https://api.ixiaowai.cn/gqapi/gqapi.php" />
+		<div class="bottom-cover" style="background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(244 248 251 / 0.6) 50%, rgb(244 248 251) 100%);"></div>
+	</div>
+			<!--弹窗开始-->
+	 <script>
+	            mayiui.alert('Hello，添加到收藏请手动 Ctrl+D </p>',{
+	              mode:1,
+	              style:'white',
+	              title:'纸飞机视频导航收藏说明',
+	              closeButton:false  
+	            });
+	        </script>
+					<!--弹窗结束-->
+		<!--topbar开始-->
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="position: absolute; z-index: 10000;">
+			<button class="navbar-toggler collapsed" style="border: none; outline: none;"type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">	    
+			<svg class="icon" width="200" height="200"><use xlink:href="#icon-menus"></use></svg>
+			<span><svg class="bi bi-x" 	fill="currentColor" id="x"><use xlink:href="#icon-closes"></use></svg><span></button>
+			<div class="collapse navbar-collapse" id="navbarsExample05">
+				<ul class="navbar-nav mr-auto">
+					<!-- 顶部导航开始-->
+					<li class="nav-item"><a class="nav-link" href="http://jx.ichenc.cn/">首页</a></li>
+					<!-- 顶部结束-->
+					
+					<!-- 天气开始 -->
+				    <div id="he-plugin-simple"></div><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+					<!-- 天气结束 -->
+				</ul>
+				<div id="main">
+					<div id="show_date"></div><!-- 日期显示 -->  
+					<div id="show_time"></div><!-- 时间显示 -->
+				</div>	
+			</div>
+		</nav>
+		<!--topbar结束-->
+		
+		<div class="container" style="margin-top:10vh; position: relative; z-index: 100;">
+			<h2 class="title">纸飞机 - 最简洁的影视导航！</h2><div id="show_time"></div><!-- 首页提示文字-->
+	
+		<!--搜索开始-->
+		<div id="search" class="s-search">
+			<div id="search-list" class="hide-type-list">
+				<div class="search-group group-a s-current" style=" margin-top: 50px;">
+					<ul class="search-type">
+						<li>
+							<input hidden=""  checked="" type="radio" name="type" id="type-bi" value="https://www.baidu.com/s?wd="data-placeholder="百度一下，你就知道！">
+							<label for="type-bi" style="font-weight:600">
+							<img src="img/1.png">
+								<span style="color:#696a6d">
+								 百度
+								</span>
+							</label>
+						</li>
+						<li>
+						<input hidden=""  checked="" type="radio" name="type" id="type-sogou" value="https://www.sogou.com/web?query="data-placeholder="搜狗搜索引擎 - 上网从搜狗开始">
+						<label for="type-sogou" style="font-weight:600">
+						<img src="img/2.png">
+							<span style="color:#696a6d">
+								 搜狗
+							</span>
+						</label>
+						</li>
+							<li>
+							<input hidden=""  checked="" type="radio" name="type" id="type-bing" value="https://cn.bing.com/search?q="data-placeholder="bing在线搜索">
+							<label for="type-bing" style="font-weight:600">
+							<img src="img/3.png">
+								<span style="color:#696a6d">
+								 bing
+								</span>
+							</label>
+						</li>
+							<li>
+							<input hidden=""  checked="" type="radio" name="type" id="type-zx" value="https://so.toutiao.com/search?wid_ct=1659806500586&dvpf=pc&keyword="data-placeholder="头条搜索！">
+							<label for="type-zx" style="font-weight:600">
+							<img src="img/4.png">
+								<span style="color:#696a6d">
+								 头条
+								</span>
+							</label>
+						</li>
+								<li>
+								<input hidden=""  checked="" type="radio" name="type" id="type-xz" value="https://github.com/search?q="data-placeholder="github搜索">
+								<label for="type-xz" style="font-weight:600">
+								<img src="img/5.png">
+									<span style="color:#696a6d">
+									 github
+									</span>
+								</label>
+						</li>
+							<li>
+							<input hidden=""  checked="" type="radio" name="type" id="type-zhihu" value="https://www.zhihu.com/search?type=content&q="data-placeholder="知乎搜索">
+							<label for="type-zhihu" style="font-weight:600">
+							<img src="img/6.png">
+								<span style="color:#0084fe">
+								知乎
+								</span>
+							</label>
+						</li>
+							<li>
+							<input hidden=""  checked="" type="radio" name="type" id="type-bilibili" value="https://search.bilibili.com/all?keyword="data-placeholder="B站搜索">
+							<label for="type-bilibili" style="font-weight:600">
+							<img src="img/7.png">
+								<span style="color:#00aeec">
+									B站
+								</span>
+							</label>
+						</li>
+							<li>
+							<input hidden=""  checked="" type="radio" name="type" id="type-google" value="https://translate.google.cn/m?sl=zh-CN&tl=en&hl=zh-CN&q=" data-placeholder="谷歌翻译！">
+							<label for="type-google" style="font-weight:600">
+							<img src="img/8.png">
+								<span style="color:#fc5531">
+									翻译
+								</span>
+							</label>
+						</li>				  
+					</ul>
+				</div>
+			</div>
+				<form action="http://chen9.top/hx/?url=" method="get" target="_blank" id="super-search-fm">
+					<input type="text" id="search-text" placeholder="纸飞机" style="outline:0" autocomplete="off">
+					<button class="submit" type="submit">
+						<svg style="width: 22px; height: 22px; margin: 0 20px 0 20px; color: #fff;" class="icon" aria-hidden="true"><use xlink:href="#icon-sousuo"></use></svg><span>
+					</button>
+					<ul id="word" style="display: none;"></ul>
+				</form>
+				<div class="set-check hidden-xs">
+					<input type="checkbox" id="set-search-blank" class="bubble-3" autocomplete="off">
+				</div>
+		</div>
+
+<!-- 链接开始-->
+<ul class="mylist row">
+<li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-remen"></use></svg><sapn>视频网站</sapn></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://v.qq.com" target="_blank"><img src="img/qq.png"><span>腾讯视频</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.youku.com/" target="_blank"><img src="img/youku.png"><span>优酷</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.iqiyi.com/" target="_blank"><img src="img/aiqiyi.png"><span>爱奇艺</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.mgtv.com/" target="_blank"><img src="img/mangguo.png"><span>芒果</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://film.sohu.com/" target="_blank"><img src="img/souhu.png"><span>搜狐</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.pptv.com/" target="_blank"><img src="img/pptv.png"><span>PPTV</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.migu.cn/" target="_blank"><img src="img/migu.png"><span>咪咕</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://www.le.com/" target="_blank"><img src="img/leshi.png"><span>乐视TV</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.pptv.com/" target="_blank"><img src="img/pptv.png"><span>PPTV</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.bilibili.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bili"></use></svg><span>哔哩哔哩</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.yinyuetai.com/" target="_blank"><img src="img/yinyue.png"><span>音乐tai</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.1905.com/" target="_blank"><img src="img/1905.png"><span>1905网</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.wasu.cn/" target="_blank"><img src="img/huashu.png"><span>华数TV</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://fun.tv/" target="_blank"><img src="img/fengxing.png"><span>风行网</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://tv.cctv.com/live/index.shtml" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cctv"></use></svg><span>CCTV直播</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.douyin.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-douyin00"></use></svg><span>抖音网页版</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.kuaishou.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kuaishou00"></use></svg><span>快手网页版</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://music.163.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wyyyy00"></use></svg><span>网易云音乐</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://y.qq.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qqmusic00"></use></svg><span>QQ音乐</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.kugou.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kugou00"></use></svg><span>酷狗音乐</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.huya.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-huya00"></use></svg><span>虎牙直播</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.douyu.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-douyu00"></use></svg><span>斗鱼直播</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://egame.qq.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qie00"></use></svg><span>企鹅电竞</span></a></li>
+<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://filehelper.weixin.qq.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat00"></use></svg><span>微信文件传输助手</span></a></li>
+</ul>
+<!-- 链接结束-->
+<script type="text/javascript">
+		//判断F12审查元素
+function fuckyou() {
+	window.close(); //关闭当前窗口(防抽)
+	window.location = "about:blank"; //将当前窗口跳转置空白页
+}
+
+function ck() {
+	console.profile();
+	console.profileEnd();
+	//我们判断一下profiles里面有没有东西，如果有，肯定有人按F12了，没错！！
+	if(console.clear) {
+		console.clear()
+	};
+	if(typeof console.profiles == "object") {
+		return console.profiles.length > 0;
+	}
+}
+
+function hehe() {
+	if((window.console && (console.firebug || console.table && /firebug/i.test(console.table()))) || (typeof opera == 'object' && typeof opera.postError == 'function' && console.profile.length > 0)) {
+		fuckyou();
+	}
+	if(typeof console.profiles == "object" && console.profiles.length > 0) {
+		fuckyou();
+	}
+}
+hehe();
+window.onresize = function() {
+	if((window.outerHeight - window.innerHeight) > 200)
+		//判断当前窗口内页高度和窗口高度，如果差值大于200，那么呵呵
+		fuckyou();
+}
+</script>
+<script>//禁止右键
+
+  function click(e) {
+
+    if (document.all) {
+
+      if (event.button == 2 || event.button == 3) {
+        alert("欢迎光临寒舍，有什么需要帮忙的话，请与站长联系！谢谢您的合作！！！");
+
+        oncontextmenu = 'return false';
+
+      }
+
+    }
+
+    if (document.layers) {
+
+      if (e.which == 3) {
+
+        oncontextmenu = 'return false';
+
+      }
+
+    }
+
+  }
+
+  if (document.layers) {
+
+    document.captureEvents(Event.MOUSEDOWN);
+
+  }
+
+  document.onmousedown = click;
+
+  document.oncontextmenu = new Function("return false;")
+
+  document.onkeydown = document.onkeyup = document.onkeypress = function() {
+
+    if (window.event.keyCode == 12) {
+
+      window.event.returnValue = false;
+
+      return (false);
+
+    }
+
+  }</script>
+  
+<script>//禁止F12
+
+  function fuckyou() {
+
+    window.close(); //关闭当前窗口(防抽)
+
+    window.location = "about:blank"; //将当前窗口跳转置空白页
+
+  }
+
+  function click(e) {
+
+    if (document.all) {
+
+      if (event.button == 2 || event.button == 3) {
+
+        alert("欢迎光临寒舍，有什么需要帮忙的话，请与站长联系！谢谢您的合作！！！");
+
+        oncontextmenu = 'return false';
+
+      }
+
+    }
+
+    if (document.layers) {
+
+      if (e.which == 3) {
+
+        oncontextmenu = 'return false';
+
+      }
+
+    }
+
+  }
+
+  if (document.layers) {
+
+    fuckyou();
+
+    document.captureEvents(Event.MOUSEDOWN);
+
+  }
+
+  document.onmousedown = click;
+
+  document.oncontextmenu = new Function("return false;")
+
+  document.onkeydown = document.onkeyup = document.onkeypress = function() {
+
+    if (window.event.keyCode == 123) {
+
+      fuckyou();
+
+      window.event.returnValue = false;
+
+      return (false);
+
+    }
+
+  }</script>
+
+<script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.5.3/js/bootstrap.min.js" type="application/javascript"></script>
+<script src="./js/script.js"></script>
+<script src="./js/svg.js"></script>
+<div style="display:none;" class="back-to" id="toolBackTop"> 
+<a title="返回顶部" onclick="window.scrollTo(0,0);return false;" href="#top" class="back-top"></a> 
+</div> 
+<div class="mt-5 mb-3 footer text-muted text-center"> 
+
+	
+</div>  
+</html>
