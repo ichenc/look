@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Paper Airplane一键解析</title>
+<link rel="icon" href="./img/logo.ico" type="image/x-icon">	
+<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			html,
+			body {
+				height: 100%;
+			}
+
+			body {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				background: url(img/jx.jpg) no-repeat;
+				background-size: auto;
+			}
+
+			#web_header {
+				flex-grow: 1;
+			}
+
+			#web_middle {
+				flex-grow: 3;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			#web_info {
+				width: 32rem;
+				height: 24rem;
+				background-color: rgba(154, 167, 177, 0.5);
+				backdrop-filter: blur(3rem);
+				border-radius: 1.25rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				box-shadow: 0.25rem 0.25rem 1.25rem darkgrey;
+			}
+
+			#web_info:hover {
+				box-shadow: 0.25rem 0.25rem 2.15rem darkgrey;
+			}
+
+			#web_info a {
+				cursor: pointer;
+				font-size: 1.8rem;
+				color: aliceblue;
+				text-decoration: none;
+				text-shadow: 0.25rem 0.25rem 1.25rem azure;
+				letter-spacing: 0.25rem;
+				text-transform: uppercase;
+				background: linear-gradient(90deg, black 0%, white 60%, black 100%);
+				background-size: 80%;
+				background-repeat: no-repeat;
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-animation:  3s linear infinite;
+				animation:  3s linear infinite;
+			}
+
+			#web_info a:hover {
+				text-shadow: 0.25rem 0.25rem 2.15rem azure;
+			}
+
+			@-webkit-keyframes  {
+				from {
+					background-position: -500%;
+				}
+
+				to {
+					background-position: 500%;
+				}
+			}
+
+			@keyframes  {
+				from {
+					background-position: -500%;
+				}
+
+				to {
+					background-position: 500%;
+				}
+			}
+
+			#web_footer {
+				flex-grow: 1;
+			}
+			#web_footer a{
+				font-size: 1.125rem;
+				color: #F0F8FF;
+				text-decoration: none;
+				opacity: 0.5;
+			}
+			#web_footer a:hover{
+				opacity: 0.8;
+			}
+
+			@media screen and (max-width: 36rem) {
+				#web_info {
+					width: 24rem;
+					height: 18rem;
+				}
+			}
+		</style>
+</head>
+<body>
+<div id="web_header">
+</div>
+<div id="web_middle">
+<div id="web_info">
+<a style="font-size:1;cursor:move;" href="javascript:(function(){window.open(&quot;https://www.8090.la/8090/?url=&quot;+document.location.href)})()" onclick="alert('请将此按钮拖动到书签栏中，在观看的视频页面点击进行解析。');return false;" class="nextb" target="_blank"><i class="fa fa-rocket"></i>一键解析</a>
+</div>
+</div>
+<div id="web_footer"><a href="https://cn-api.com/ads/a.php?qun=474927437">点击加群</a></div>
+</body></html>
